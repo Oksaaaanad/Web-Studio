@@ -67,11 +67,11 @@ img {
     background-size: 320px 432px;
     max-width: 1440px;
     text-align: center;
-    padding: 188px 0;
+    padding: 72px 0;
     margin: 0 auto;
 }
 .hero-title {
-    max-width: 288px;
+    max-width: 218px;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0;
@@ -169,7 +169,6 @@ img {
 .portfolio {
     margin-left: auto;
     margin-right: auto;
-    max-width: 288px;
     flex-shrink: 0;
     padding: 96px 0 96px 0;
 }
@@ -178,19 +177,36 @@ img {
     overflow: hidden;
 }
 .portfolio-list {
-    width: 288px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 72px;
+    gap: 72px;
 }
 
 .portfolio-item {
-    flex-basis: 100%;
+    width: 100%;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
     
 }
+/* Footer */
+.footer {
+
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e2f42;
+    padding: 96px 0;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-paragraph {
+    margin-right: 120px;
+}
+
 
 @media screen and (min-width: 768px) {
     /* Header */
@@ -235,6 +251,7 @@ img {
                 /* Hero */
                                 @media (min-resolution: 192dpi) {
                                     .hero {
+                                        padding: 112px 0 36px 0;
                                         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/office2.jpg');
                                         background-size: 768px 436px;
                                     }
@@ -249,9 +266,7 @@ img {
                             
                         }
             
-                        .hero-button {
-                           
-                        }
+                        
 
                 /* Features */
     .features-list {
@@ -280,31 +295,31 @@ img {
                             
             /* Portfolio */
                 .portfolio {
-                    display: flex;
+                    
                     flex-wrap: wrap;
                     
                 }
         
                 .portfolio-list {
-                    width: 356px;
                     display: flex;
                     flex-wrap: wrap;
-                    column-gap: 72px;
-                    row-gap: 24px;
+                    column-gap: 24px;
+                    row-gap: 72px;
                 }
         
                 .portfolio-item {
-                  
-                    width: calc((100% - 72px) / 2);
+                    width: calc((100% - 24px) / 2);
                  
                 }
+               /* Footer */
+
+
 }
 
 
 @media screen and (min-width: 1158px) {
     /* Header */
     .container {
-        max-width: 1158px;
         padding: 0 15px;
     }
          .header-contacts-list {
@@ -324,8 +339,10 @@ img {
         /* Hero */
                 @media (min-resolution: 192dpi) {
                     .hero {
+                        padding: 188px 0;
                         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/office.jpg');
                         background-size: 1440px 600px;
+
                     }
                 }
                                 .hero-title {
@@ -430,6 +447,20 @@ img {
                             width: calc((100% - 48px) / 3);
                             transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
                         }
+                    /* Footer */
+                      .footer {
+                        padding: 100px 0;
+
+                      }  
+                                          .footer-container {
+                                              display: flex;
+                                              align-items: baseline;
+                                          }
+                    
+                                          .footer-paragraph {
+                                              margin-right: 120px;
+                                          }
+
 
 }
 
@@ -669,22 +700,6 @@ img {
 }
 
 /* footer */
-.footer {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #2e2f42;
-    padding: 100px 0;
-}
-
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
-.footer-paragraph {
-    margin-right: 120px;
-}
 
 footer a {
     display: inline-block;
